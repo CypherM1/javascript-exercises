@@ -1,26 +1,38 @@
-const add = function() {
-	
+const add = function(a,b) {
+	let equals = a + b;
+  return equals;
 };
 
-const subtract = function() {
-	
+const subtract = function(a,b) {
+	let equals = a - b;
+  return equals;
 };
 
-const sum = function() {
-	
+const sum = function(nums) {
+	const equals = nums.reduce((partialSum, a) => partialSum + a, 0);
+  return equals;
 };
 
-const multiply = function() {
-
+const multiply = function(nums) {
+  const equals = nums.reduce((partialSum, a) => partialSum * a, 1);
+  return equals;
 };
 
-const power = function() {
-	
+const power = function(a,b) {
+	let equals = a ** b;
+  return equals;
 };
 
-const factorial = function() {
-	
+
+const factorial = function(num) {
+	if (num === 0 || num === 1)
+    return 1;
+  for (var i = num - 1; i >= 1; i--) {
+    num *= i;
+  }
+  return num;
 };
+console.log(factorial(10));
 
 // Do not edit below this line
 module.exports = {
